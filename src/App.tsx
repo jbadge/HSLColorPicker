@@ -1,5 +1,10 @@
 import React from 'react'
+import { Hsl } from './components/hsl'
 
 export function App() {
-  return <div>Hello, World </div>
+  return (
+    <div>
+      <Hsl />
+    </div>
+  )
 }
