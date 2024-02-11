@@ -26,8 +26,6 @@ header {
 }
 
 h1 {
-  // font-size: 3.5rem;
-  // text-shadow: 0rem 0.3rem 1rem #2f3737;
   text-shadow: rgb(166, 166, 166) 0px 1px 0px, rgb(166, 166, 166) 0px 2px 0px,
     rgb(166, 166, 166) 0px 3px 0px, rgb(166, 166, 166) 0px 4px 0px,
     rgba(0, 0, 0, 0.2) 0px 5px 1px, rgba(0, 0, 0, 0.3) 0px 0px 10px,
@@ -36,11 +34,12 @@ h1 {
 }
 
 main {
+  display: flex;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  // display: grid;
+  // grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  grid-column: span 3;
+  // grid-column: span 3;
   justify-content: center;
 }
 
@@ -52,14 +51,21 @@ section {
 
 article {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   align-items: center;
 }
 
 .sliderStyle {
-  padding: 2px;
+  padding-top: 20px;
   gap: 1rem;
+  // width: 350px;
+  // width: 40%;
 }
+
+// input {
+//   width: fit-content;
+// }
 
 #hueSlider {
   text-align: center;
@@ -78,14 +84,13 @@ article {
 
 .hue,
 .saturation,
-.lightness,
-.alpha {
+.lightness {
   width: 60%;
 }
 
 #colorBox {
   height: 100px;
-  width: 60%;
+  width: 100px;
   justify-self: end;
   border: 1px solid black;
   border-radius: 1rem;
