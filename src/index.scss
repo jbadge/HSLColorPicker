@@ -26,13 +26,13 @@ header {
 }
 
 h1 {
-  font-size: 3.5rem;
-  text-shadow: 0rem 0.3rem 1rem #2f3737;
-  // text-shadow: rgb(84, 149, 176) 0px 1px 0px, rgb(84, 149, 176) 0px 2px 0px,
-  //   rgb(84, 149, 176) 0px 3px 0px, rgb(84, 149, 176) 0px 4px 0px,
-  //   rgba(0, 0, 0, 0.2) 0px 5px 1px, rgba(0, 0, 0, 0.3) 0px 0px 10px,
-  //   rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.5) 0px 6px 5px,
-  //   rgba(0, 0, 0, 0.6) 0px 10px 10px;
+  // font-size: 3.5rem;
+  // text-shadow: 0rem 0.3rem 1rem #2f3737;
+  text-shadow: rgb(166, 166, 166) 0px 1px 0px, rgb(166, 166, 166) 0px 2px 0px,
+    rgb(166, 166, 166) 0px 3px 0px, rgb(166, 166, 166) 0px 4px 0px,
+    rgba(0, 0, 0, 0.2) 0px 5px 1px, rgba(0, 0, 0, 0.3) 0px 0px 10px,
+    rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.5) 0px 6px 5px,
+    rgba(0, 0, 0, 0.6) 0px 10px 10px;
 }
 
 main {
@@ -63,17 +63,17 @@ article {
 
 #hueSlider {
   text-align: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 #saturationSlider {
   text-align: center;
-  padding: 20px;
+  padding: 2px 0px;
 }
 
 #lightnessSlider {
   text-align: center;
-  padding: 20px;
+  padding: 2px 0px;
 }
 
 .hue,
@@ -94,6 +94,7 @@ article {
 
 .textBox {
   width: 3ch;
+  text-align: right;
 }
 
 .label {
@@ -103,8 +104,6 @@ article {
 }
 
 .hslTextBox {
-  // margin-top: 20px;
-  // justify-content: right;
   text-align: center;
 }
 
@@ -117,10 +116,9 @@ footer {
 }
 
 button {
-  // height: 100%;
+  cursor: pointer;
 }
 
 #reference {
-  // text-align: center;
   padding: 10px 0px;
 }

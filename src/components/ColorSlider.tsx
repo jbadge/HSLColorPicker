@@ -12,10 +12,6 @@ export function ColorSlider() {
     Math.floor(Math.random() * 101)
   )
 
-  const [alphaValue, setAlpha] = useState<string | number>(
-    Math.floor(Math.random() * 101)
-  )
-
   const newBackgroundColor = `hsl(${hueValue},${saturationValue}%,${lightnessValue}%)`
   const newStyle = {
     backgroundColor: newBackgroundColor,
@@ -35,7 +31,7 @@ export function ColorSlider() {
       <main>
         <aside id="colorBox" style={newStyle}></aside>
         <section id="sliders" className="sliderStyle">
-          <article className="hueStyle">
+          <article id="hueSlider">
             <label htmlFor="hue" className="label">
               H
             </label>
@@ -55,7 +51,7 @@ export function ColorSlider() {
               maxLength={3}
             />
           </article>
-          <article className="saturationStyle">
+          <article id="saturationSlider">
             <label htmlFor="saturation" className="label">
               S
             </label>
@@ -75,7 +71,7 @@ export function ColorSlider() {
               maxLength={3}
             />
           </article>
-          <article className="lightnessStyle">
+          <article id="lightnessSlider">
             <label htmlFor="lightness" className="label">
               L
             </label>
@@ -95,26 +91,6 @@ export function ColorSlider() {
               maxLength={3}
             />
           </article>
-          <article className="alphaStyle">
-            <label htmlFor="alpha" className="label">
-              A
-            </label>
-            <input
-              className="alpha"
-              type="range"
-              id="alpha"
-              name="alpha"
-              min="0"
-              max="100"
-              onChange={(event) => setAlpha(event.target.value)}
-            />
-            <input
-              className="textBox"
-              type="text"
-              value={alphaValue}
-              maxLength={3}
-            />
-          </article>
         </section>
       </main>
       <footer>
@@ -123,7 +99,7 @@ export function ColorSlider() {
           <input
             className="hslTextBox"
             type="text"
-            value={`hsl(${hueValue}, ${saturationValue}%, ${lightnessValue}%, ${alphaValue}%)`}
+            value={`hsl(${hueValue}, ${saturationValue}%, ${lightnessValue}%)`}
           />
         </div>
       </footer>
