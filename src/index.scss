@@ -21,6 +21,106 @@ body {
   min-height: 100%;
 }
 
-.test {
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-shadow: 0rem 0.3rem 1rem #2f3737;
+  // text-shadow: rgb(84, 149, 176) 0px 1px 0px, rgb(84, 149, 176) 0px 2px 0px,
+  //   rgb(84, 149, 176) 0px 3px 0px, rgb(84, 149, 176) 0px 4px 0px,
+  //   rgba(0, 0, 0, 0.2) 0px 5px 1px, rgba(0, 0, 0, 0.3) 0px 0px 10px,
+  //   rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.5) 0px 6px 5px,
+  //   rgba(0, 0, 0, 0.6) 0px 10px 10px;
+}
+
+main {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  grid-column: span 3;
+  justify-content: center;
+}
+
+section {
   display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+article {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sliderStyle {
+  padding: 2px;
+  gap: 1rem;
+}
+
+#hueSlider {
+  text-align: center;
+  padding: 20px;
+}
+
+#saturationSlider {
+  text-align: center;
+  padding: 20px;
+}
+
+#lightnessSlider {
+  text-align: center;
+  padding: 20px;
+}
+
+.hue,
+.saturation,
+.lightness,
+.alpha {
+  width: 60%;
+}
+
+#colorBox {
+  height: 100px;
+  width: 60%;
+  justify-self: end;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem black;
+}
+
+.textBox {
+  width: 3ch;
+}
+
+.label {
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 1ch;
+}
+
+.hslTextBox {
+  // margin-top: 20px;
+  // justify-content: right;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+button {
+  // height: 100%;
+}
+
+#reference {
+  // text-align: center;
+  padding: 10px 0px;
 }

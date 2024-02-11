@@ -1,10 +1,10 @@
 import React from 'react'
-import { Hsl } from './components/hsl'
+import { ColorSlider } from './components/ColorSlider'
 
 export function App() {
   return (
     <div>
-      <Hsl />
+      <ColorSlider />
     </div>
   )
 }
