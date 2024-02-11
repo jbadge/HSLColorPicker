@@ -42,6 +42,7 @@ export function ColorSlider() {
               name="hue"
               min="0"
               max="360"
+              value={hueValue}
               onChange={(event) => setHue(event.target.value)}
             />
             <input
@@ -62,6 +63,7 @@ export function ColorSlider() {
               name="saturation"
               min="0"
               max="100"
+              value={saturationValue}
               onChange={(event) => setSaturation(event.target.value)}
             />
             <input
@@ -82,6 +84,7 @@ export function ColorSlider() {
               name="lightness"
               min="0"
               max="100"
+              value={lightnessValue}
               onChange={(event) => setLightness(event.target.value)}
             />
             <input
