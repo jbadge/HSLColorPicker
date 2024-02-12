@@ -35,57 +35,44 @@ h1 {
 
 main {
   display: flex;
-  align-items: center;
-  // display: grid;
-  // grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-  // grid-column: span 3;
   justify-content: center;
 }
 
-section {
+.grouping {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#sliderContainer {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  padding-top: 20px;
+  gap: 1rem;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 16px;
+  height: 15px;
+  width: 15rem;
 }
 
 article {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-  align-items: center;
-}
-
-.sliderStyle {
-  padding-top: 20px;
-  gap: 1rem;
-  // width: 350px;
-  // width: 40%;
-}
-
-// input {
-//   width: fit-content;
-// }
-
-#hueSlider {
-  text-align: center;
-  padding: 0px;
-}
-
-#saturationSlider {
-  text-align: center;
-  padding: 2px 0px;
-}
-
-#lightnessSlider {
-  text-align: center;
-  padding: 2px 0px;
 }
 
 .hue,
 .saturation,
 .lightness {
-  width: 60%;
+  width: auto;
 }
 
 #colorBox {
