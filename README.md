@@ -3,7 +3,7 @@
 
 # HSL Color Picker
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://hsl-colorpicker-jb.netlify.app/)
 
 <!-- HSL COLOR PICKER v1 Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot. -->
 
